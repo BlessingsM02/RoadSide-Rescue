@@ -40,7 +40,20 @@ namespace RoadSide_Rescue.ViewModel
             this._navigation = navigation;
             RegisterBtn = new Command(RegisterBtnTappedAsync);
             LoginBtn = new Command(LoginBtnTappedAsync);
+
+            CheckIfUserAuthenticated();
         }
+
+        private async void CheckIfUserAuthenticated()
+        {
+            var serializedContent = Preferences.Get("FreshFirebaseToken", null);
+            if (!string.IsNullOrEmpty(serializedContent))
+            {
+                // User is already authenticated, navigate to home page directly
+                await Shell.Current.GoToAsync($"//{nameof(HomePage)}");
+            }
+        }
+
 
         private async void LoginBtnTappedAsync(object obj)
         {

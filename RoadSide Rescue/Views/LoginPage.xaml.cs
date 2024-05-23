@@ -1,3 +1,4 @@
+using Firebase.Auth;
 using RoadSide_Rescue.ViewModel;
 
 namespace RoadSide_Rescue.Views;

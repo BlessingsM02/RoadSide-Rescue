@@ -10,7 +10,7 @@
 
 
     <Shell.Behaviors>
-        <toolkit:StatusBarBehavior StatusBarColor="LightSkyBlue" 
+        <toolkit:StatusBarBehavior StatusBarColor="#1C375C" 
                                    StatusBarStyle="LightContent" />
     </Shell.Behaviors>
     

@@ -16,6 +16,7 @@ namespace RoadSide_Rescue.ViewModel
 
         public Command RegisterBtn { get; }
         public Command LoginBtn { get; }
+        public Command ForgotPasswordBtn { get; }
 
         public string UserName
         {
@@ -40,6 +41,8 @@ namespace RoadSide_Rescue.ViewModel
             this._navigation = navigation;
             RegisterBtn = new Command(RegisterBtnTappedAsync);
             LoginBtn = new Command(LoginBtnTappedAsync);
+            ForgotPasswordBtn = new Command(ForgotPasswordBtnTappedAsync);
+
 
             CheckIfUserAuthenticated();
         }
@@ -83,6 +86,26 @@ namespace RoadSide_Rescue.ViewModel
         private void RaisePropertyChanged(string v)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(v));
+        }
+
+        private async void ForgotPasswordBtnTappedAsync(object obj)
+        {
+            if (string.IsNullOrWhiteSpace(UserName))
+            {
+                await App.Current.MainPage.DisplayAlert("Error", "Please enter your email address.", "OK");
+                return;
+            }
+
+            try
+            {
+                var authProvider = new FirebaseAuthProvider(new FirebaseConfig(webApiKey));
+                await authProvider.SendPasswordResetEmailAsync(UserName);
+                await App.Current.MainPage.DisplayAlert("Success", "Password reset email has been sent.", "OK");
+            }
+            catch (Exception ex)
+            {
+                await App.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+            }
         }
     }
 

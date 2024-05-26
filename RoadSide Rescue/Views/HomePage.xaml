@@ -2,12 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RoadSide_Rescue.Views.HomePage"
-             Title="HomePage"
+             Title="Roadside Rescue"
+             xmlns:maps="http://schemas.microsoft.com/dotnet/2021/maui/maps"
              Shell.FlyoutBehavior="Disabled">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to Home"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout Padding="10"
+                         Spacing="5">
+        <maps:Map x:Name="map" 
+                  IsShowingUser="True"
+                  HeightRequest="700"
+                  HorizontalOptions="FillAndExpand"
+                  VerticalOptions="FillAndExpand"/>
+
+        <Button
+            Text="Request"
+            x:Name="requestButton"
+            BackgroundColor="#263E57"
+            Clicked="requestButton_Clicked"/>
+
+
     </VerticalStackLayout>
 </ContentPage>

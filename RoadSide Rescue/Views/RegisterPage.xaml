@@ -21,13 +21,13 @@
             FontSize="24"
             HorizontalOptions="CenterAndExpand"
             Text="Registration"
-            TextColor="#1C375C" />
+            TextColor="#263E57" />
         <Label
             Grid.Row="1"
             Margin="0,-15,0,0"
             HorizontalOptions="CenterAndExpand"
             Text="Register With Email"
-            TextColor="#1C375C" />
+            TextColor="#263E57" />
         <Entry
             Grid.Row="2"
             Margin="0,20,0,0"
@@ -44,7 +44,7 @@
             VerticalOptions="FillAndExpand" />
         <Button
             Grid.Row="4"
-            BackgroundColor="#1C375C"
+            BackgroundColor="#263E57"
             Command="{Binding RegisterUser}"
             CornerRadius="20"
             Text="Register" />

@@ -8,7 +8,7 @@
 
     <ContentPage.Content>
         <Grid
-            BackgroundColor="#1C375C"
+            BackgroundColor="#263E57"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand">
             <Grid.RowDefinitions>
@@ -27,7 +27,7 @@
             <Frame
                 Grid.Row="1"
                 Margin="0,0,0,-40"
-                BorderColor="#1C375C"
+                BorderColor="#263E57"
                 CornerRadius="50"
                 HasShadow="True"
                 HeightRequest="600">
@@ -59,7 +59,7 @@
                         Margin="0,-15,0,0"
                         HorizontalOptions="CenterAndExpand"
                         Text="Login in to account"
-                        TextColor="#1C375C" />
+                        TextColor="#263E57" />
                     <Entry
                         Grid.Row="2"
                         Margin="0,20,0,0"
@@ -76,14 +76,14 @@
                         VerticalOptions="FillAndExpand" />
                     <Button
                         Grid.Row="4"
-                        BackgroundColor="#1C375C"
+                        BackgroundColor="#263E57"
                         Command="{Binding LoginBtn}"
                         CornerRadius="20"
                         Text="Login" />
 
                     <Button
                         Grid.Row="5"
-                        BackgroundColor="#1C375C"
+                        BackgroundColor="#263E57"
                         Command="{Binding RegisterBtn}"
                         CornerRadius="20"
                         Text="Register using Email" />

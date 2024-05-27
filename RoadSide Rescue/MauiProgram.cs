@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Maui;
+using The49.Maui.BottomSheet;
 using Microsoft.Extensions.Logging;
 
 namespace RoadSide_Rescue
@@ -12,6 +13,7 @@ namespace RoadSide_Rescue
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
                 .UseMauiMaps()
+                .UseBottomSheet()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

@@ -93,7 +93,7 @@
                     <Button
                         Grid.Row="7"
                         CornerRadius="20"
-                        BackgroundColor="#1C375C"
+                        BackgroundColor="#263E57"
                         Text="Forget Password"
                         Command="{Binding ForgotPasswordBtn}"/>
                     

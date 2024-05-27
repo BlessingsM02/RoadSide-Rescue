@@ -9,7 +9,7 @@
                          Spacing="5">
         <maps:Map x:Name="map" 
                   IsShowingUser="True"
-                  HeightRequest="700"
+                  HeightRequest="675"
                   HorizontalOptions="FillAndExpand"
                   VerticalOptions="FillAndExpand"/>
 

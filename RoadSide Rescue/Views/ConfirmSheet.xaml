@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<the49:BottomSheet  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:the49="https://schemas.the49.com/dotnet/2023/maui"
+                    x:Class="RoadSide_Rescue.Views.ConfirmSheet"
+                    BackgroundColor="Gray"
+                    CornerRadius="14"
+                    HasHandle="True"
+                    HasBackdrop="True"
+                    HandleColor="red">
+
+
+        <VerticalStackLayout Padding="10"
+                             Spacing="5">
+
+            <Label
+                Text="Confirm Request"
+                FontSize="Large"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+        <Label
+            Text="Confirm Request"
+    FontSize="Header"
+    VerticalOptions="Center"
+    HorizontalOptions="Center"/>
+        <Label
+    Text="Confirm Request"
+    FontSize="Header"
+    VerticalOptions="Center"
+    HorizontalOptions="Center"/>
+        <Label
+    Text="Confirm Request"
+    FontSize="Header"
+    VerticalOptions="Center"
+    HorizontalOptions="Center"/>
+        <Button
+                Text="Confirm"
+                BackgroundColor="#263E57"/>
+
+
+        </VerticalStackLayout>
+    
+
+    
+
+</the49:BottomSheet>

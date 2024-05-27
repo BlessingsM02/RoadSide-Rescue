@@ -27,9 +27,11 @@ namespace RoadSide_Rescue.Views
         {
             var geolocationRequest = new GeolocationRequest(GeolocationAccuracy.High, TimeSpan.FromMicroseconds(20));
             var location = await Geolocation.GetLocationAsync(geolocationRequest);
+            
 
-            // Clear existing pins
+            
             map.Pins.Clear();
+
 
             var pin = new Pin()
             {
@@ -39,6 +41,10 @@ namespace RoadSide_Rescue.Views
                 Label = "Current",
             };
             map.Pins.Add(pin);
+
+            ConfirmSheet sheet = new ConfirmSheet();
+
+            await sheet.ShowAsync();
         }
 
     }

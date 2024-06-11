@@ -38,11 +38,7 @@ namespace RoadSide_Rescue.ViewModel
             }
         }
 
-        public async Task<List<Vehicle>> GetAllVehiclesAsync()
-        {
-            var vehicles = await _firebaseClient.Child("vehicles").OnceAsync<Vehicle>();
-            return vehicles.Select(v => v.Object).ToList();
-        }
+       
         public async Task<bool> CheckVehicleExistenceAsync(string userEmail)
         {
             try

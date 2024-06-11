@@ -6,18 +6,19 @@
              Shell.FlyoutBehavior="Disabled">
     <ContentPage.Content>
         <StackLayout>
-            
+
             <Label
                 x:Name="UserEmail"
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand" />
-
+            
             <Button
                 x:Name="LogoutButton"
                 Text="Logout"
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 Clicked="LogoutButton_Clicked"/>
+
 
         </StackLayout>
     </ContentPage.Content>

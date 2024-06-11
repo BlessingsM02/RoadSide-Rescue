@@ -4,10 +4,7 @@
              x:Class="RoadSide_Rescue.Views.HistoryPage"
              Title="HistoryPage"
              Shell.FlyoutBehavior="Disabled">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ContentPage.Content>
+        
+    </ContentPage.Content>
 </ContentPage>

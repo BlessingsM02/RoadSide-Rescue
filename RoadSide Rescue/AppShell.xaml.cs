@@ -13,7 +13,8 @@ namespace RoadSide_Rescue
         [
             typeof(RegisterPage),
             typeof(HistoryPage),
-            typeof(ProfilePage)
+            typeof(ProfilePage),
+            typeof(RegisterVehiclePage)
 
         ];
 

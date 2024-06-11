@@ -1,4 +1,5 @@
 ﻿using Firebase.Auth;
+using RoadSide_Rescue.Views;
 using System.ComponentModel;
 
 namespace RoadSide_Rescue.ViewModel
@@ -55,7 +56,7 @@ namespace RoadSide_Rescue.ViewModel
                 string token = auth.FirebaseToken;
                 if (token != null)
                     await App.Current.MainPage.DisplayAlert("Alert", "User Registered successfully", "OK");
-                await this._navigation.PopAsync();
+                await Shell.Current.GoToAsync($"//{nameof(RegisterVehiclePage)}");
             }
             catch (Exception ex)
             {

@@ -10,38 +10,19 @@
                     HandleColor="red">
 
 
-        <VerticalStackLayout Padding="10"
-                             Spacing="5">
-
-            <Label
-                Text="Confirm Request"
-                FontSize="Large"
-                FontAttributes="Bold"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
-        <Label
-            Text="Confirm Request"
-    FontSize="Header"
-    VerticalOptions="Center"
-    HorizontalOptions="Center"/>
-        <Label
-    Text="Confirm Request"
-    FontSize="Header"
-    VerticalOptions="Center"
-    HorizontalOptions="Center"/>
-        <Label
-    Text="Confirm Request"
-    FontSize="Header"
-    VerticalOptions="Center"
-    HorizontalOptions="Center"/>
-        <Button
-                Text="Confirm"
-                BackgroundColor="#263E57"/>
+    <StackLayout Padding="10">
+        <Label Text="Available Service Providers" FontSize="Large" />
+        <ListView x:Name="LocationsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding UserEmail}" Detail="{Binding LocationDetails}"/>
+                </DataTemplate>
+                
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 
 
-        </VerticalStackLayout>
-    
 
-    
 
 </the49:BottomSheet>

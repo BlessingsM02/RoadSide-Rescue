@@ -1,9 +1,18 @@
-namespace RoadSide_Rescue.Views;
 
-public partial class HistoryPage : ContentPage
+
+
+
+namespace RoadSide_Rescue.Views
 {
-	public HistoryPage()
-	{
-		InitializeComponent();
-	}
+    public partial class HistoryPage : ContentPage
+    {
+      
+        public HistoryPage()
+        {
+            InitializeComponent();
+
+        }
+
+    }
+
 }

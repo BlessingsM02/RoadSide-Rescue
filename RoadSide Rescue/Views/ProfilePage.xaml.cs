@@ -24,4 +24,5 @@ public partial class ProfilePage : ContentPage
         Preferences.Remove("FreshFirebaseToken");
         await Shell.Current.GoToAsync($"//{nameof(LoginPage)}");
     }
+
 }

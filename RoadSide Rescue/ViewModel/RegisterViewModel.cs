@@ -6,7 +6,7 @@ namespace RoadSide_Rescue.ViewModel
 {
     internal class RegisterViewModel : INotifyPropertyChanged
     {
-        public string webApiKey = "AIzaSyCr4cimN4UVgJ90g1WD99XguCBCMMqS0uk";
+        public string webApiKey = "AIzaSyB5xd5GeOGrG0mIYgJtDmCzwhVQo_M1WUs";
 
         private INavigation _navigation;
         private string email;
@@ -56,12 +56,12 @@ namespace RoadSide_Rescue.ViewModel
                 string token = auth.FirebaseToken;
                 if (token != null)
                     await App.Current.MainPage.DisplayAlert("Alert", "User Registered successfully", "OK");
-                await Shell.Current.GoToAsync($"//{nameof(RegisterVehiclePage)}");
+                await Shell.Current.GoToAsync($"//{nameof(LoginPage)}");
             }
             catch (Exception ex)
             {
                 await App.Current.MainPage.DisplayAlert("Alert", ex.Message, "OK");
-                throw;
+                return;
             }
         }
     }

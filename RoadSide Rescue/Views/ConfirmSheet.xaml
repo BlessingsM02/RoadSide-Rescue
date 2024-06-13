@@ -3,26 +3,24 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                     xmlns:the49="https://schemas.the49.com/dotnet/2023/maui"
                     x:Class="RoadSide_Rescue.Views.ConfirmSheet"
-                    BackgroundColor="Gray"
+                    BackgroundColor="Tan"
+                    HasBackdrop="True"
                     CornerRadius="14"
                     HasHandle="True"
-                    HasBackdrop="True"
                     HandleColor="red">
 
 
-    <StackLayout Padding="10">
-        <Label Text="Available Service Providers" FontSize="Large" />
-        <ListView x:Name="LocationsListView">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding UserEmail}" Detail="{Binding LocationDetails}"/>
-                </DataTemplate>
-                
-            </ListView.ItemTemplate>
-        </ListView>
+    <StackLayout Padding="5">
+        <Label Text="Register" FontSize="Large" HorizontalOptions="Center" />
+
+        <Label Text="Name:" 
+           TextColor="Black" />
+       
+        <Label Text="Phone Number:" TextColor="Black" />
+
+
+        <Label Text="Email:" TextColor="Black" />
+
+        <Label Text="Password:" TextColor="Black" />
     </StackLayout>
-
-
-
-
 </the49:BottomSheet>

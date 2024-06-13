@@ -3,50 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RoadSide_Rescue.Views.RegisterPage"
              Title="RegisterPage">
-    <Grid
-        Padding="20,50,20,0"
-        HorizontalOptions="FillAndExpand"
-        RowSpacing="20"
-        VerticalOptions="FillAndExpand">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Label
-            Grid.Row="0"
-            FontAttributes="Bold"
-            FontSize="24"
-            HorizontalOptions="CenterAndExpand"
-            Text="Registration"
-            TextColor="#263E57" />
-        <Label
-            Grid.Row="1"
-            Margin="0,-15,0,0"
-            HorizontalOptions="CenterAndExpand"
-            Text="Register With Email"
-            TextColor="#263E57" />
-        <Entry
-            Grid.Row="2"
-            Margin="0,20,0,0"
-            HorizontalOptions="FillAndExpand"
-            Placeholder="Email"
-            Text="{Binding Email}"
-            VerticalOptions="FillAndExpand" />
-        <Entry
-            Grid.Row="3"
-            HorizontalOptions="FillAndExpand"
-            IsPassword="True"
-            Placeholder="Password"
-            Text="{Binding Password}"
-            VerticalOptions="FillAndExpand" />
-        <Button
-            Grid.Row="4"
-            BackgroundColor="#263E57"
-            Command="{Binding RegisterUser}"
-            CornerRadius="20"
-            Text="Register" />
-    </Grid>
+
+    <StackLayout Padding="20">
+        <Label Text="Register" FontSize="Large" HorizontalOptions="Center" />
+
+        <Label Text="Name:" 
+               TextColor="Black" />
+        <Entry Placeholder="Enter your name" />
+
+        <Label Text="Phone Number:" TextColor="Black" />
+        <Entry Keyboard="Numeric" Placeholder="eg. 0960000000" />
+
+        <Label Text="Email:" TextColor="Black" />
+        <Entry Text="{Binding Email}" 
+               Placeholder="example@gmail.com" 
+               Keyboard="Email"/>
+
+        <Label Text="Password:" TextColor="Black" />
+        <Entry Text="{Binding Password}" Placeholder="Enter your password" IsPassword="True" />
+
+        <Button Text="Register" Command="{Binding RegisterUser}" />
+    </StackLayout>
 </ContentPage>

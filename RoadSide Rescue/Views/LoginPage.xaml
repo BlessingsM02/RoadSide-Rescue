@@ -64,7 +64,7 @@
                         Grid.Row="2"
                         Margin="0,20,0,0"
                         HorizontalOptions="FillAndExpand"
-                        Placeholder="Username"
+                        Placeholder="Email"
                         Text="{Binding UserName}"
                         VerticalOptions="FillAndExpand" />
                     <Entry
@@ -86,7 +86,7 @@
                         BackgroundColor="#263E57"
                         Command="{Binding RegisterBtn}"
                         CornerRadius="20"
-                        Text="Register using Email" />
+                        Text="Register" />
 
                     
                     

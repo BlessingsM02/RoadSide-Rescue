@@ -72,7 +72,7 @@ namespace RoadSide_Rescue.ViewModel
             catch (Exception ex)
             {
                 await App.Current.MainPage.DisplayAlert("Alert", ex.Message, "OK");
-                throw;
+                return;
             }
 
 
@@ -105,6 +105,7 @@ namespace RoadSide_Rescue.ViewModel
             catch (Exception ex)
             {
                 await App.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+                return;
             }
         }
     }

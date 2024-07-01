@@ -62,8 +62,8 @@ namespace RoadSide_Rescue.Views
                 }
                 else
                 {
-                    ConfirmSheet sheet = new ConfirmSheet();
-                    await sheet.ShowAsync();
+                    await App.Current.MainPage.Navigation.PushAsync(new RequestPage());
+
                 }
             }
             catch (Exception ex)

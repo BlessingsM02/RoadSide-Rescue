@@ -4,17 +4,5 @@
              x:Class="RoadSide_Rescue.Views.HistoryPage"
              Title="HistoryPage"
              Shell.FlyoutBehavior="Disabled">
-    <ContentPage.Content>
-        <StackLayout Padding="10">
-            <Label Text="Available Service Providers" FontSize="Large" />
-            <ListView x:Name="LocationsListView">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding UserEmail}" Detail="{Binding LocationDetails}"/>
-                    </DataTemplate>
-
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
-    </ContentPage.Content>
+    
 </ContentPage>

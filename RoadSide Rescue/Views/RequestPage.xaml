@@ -4,17 +4,18 @@
              x:Class="RoadSide_Rescue.Views.RequestPage"
              Shell.TabBarIsVisible="False"
              Shell.FlyoutBehavior="Disabled">
+
     <ContentPage.Content>
         <StackLayout Padding="10">
-            <Label Text="Available Service Providers" FontSize="Large" />
+            <Label Text="Nearby Service Providers" FontSize="Large" HorizontalOptions="Center" />
             <ListView x:Name="LocationsListView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding UserEmail}" Detail="{Binding LocationDetails}"/>
                     </DataTemplate>
-
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
     </ContentPage.Content>
+
 </ContentPage>

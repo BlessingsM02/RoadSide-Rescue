@@ -9,19 +9,22 @@
 
         <Label Text="Name:" 
                TextColor="Black" />
-        <Entry Placeholder="Enter your name" />
+        <Entry Placeholder="Enter your name" 
+               x:Name="name"/>
 
-        <Label Text="Phone Number:" TextColor="Black" />
+        <Label Text="Phone Number:" TextColor="Black"
+               x:Name="Phone"/>
         <Entry Keyboard="Numeric" Placeholder="eg. 0960000000" />
 
         <Label Text="Email:" TextColor="Black" />
         <Entry Text="{Binding Email}" 
                Placeholder="example@gmail.com" 
-               Keyboard="Email"/>
+               Keyboard="Email"
+               x:Name="Email"/>
 
         <Label Text="Password:" TextColor="Black" />
         <Entry Text="{Binding Password}" Placeholder="Enter your password" IsPassword="True" />
 
-        <Button Text="Register" Command="{Binding RegisterUser}" />
+        <Button x:Name="Submit" Text="Register" Command="{Binding RegisterUser}"  Clicked="Submit_Clicked"/>
     </StackLayout>
 </ContentPage>

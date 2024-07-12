@@ -9,7 +9,7 @@ namespace RoadSide_Rescue.ViewModel
 
         public VehicleRegistrationService()
         {
-            _firebaseClient = new FirebaseClient("https://trying-74dd0-default-rtdb.firebaseio.com/");
+            _firebaseClient = new FirebaseClient("https://trying-219a9-default-rtdb.firebaseio.com/");
         }
 
         public async Task RegisterVehicleAsync(Vehicle vehicle)

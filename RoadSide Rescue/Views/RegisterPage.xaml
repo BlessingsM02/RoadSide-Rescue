@@ -7,15 +7,6 @@
     <StackLayout Padding="20">
         <Label Text="Register" FontSize="Large" HorizontalOptions="Center" />
 
-        <Label Text="Name:" 
-               TextColor="Black" />
-        <Entry Placeholder="Enter your name" 
-               x:Name="name"/>
-
-        <Label Text="Phone Number:" TextColor="Black"
-               x:Name="Phone"/>
-        <Entry Keyboard="Numeric" Placeholder="eg. 0960000000" />
-
         <Label Text="Email:" TextColor="Black" />
         <Entry Text="{Binding Email}" 
                Placeholder="example@gmail.com" 
@@ -25,6 +16,6 @@
         <Label Text="Password:" TextColor="Black" />
         <Entry Text="{Binding Password}" Placeholder="Enter your password" IsPassword="True" />
 
-        <Button x:Name="Submit" Text="Register" Command="{Binding RegisterUser}"  Clicked="Submit_Clicked"/>
+        <Button x:Name="Submit" Text="Register" Command="{Binding RegisterUser}" />
     </StackLayout>
 </ContentPage>

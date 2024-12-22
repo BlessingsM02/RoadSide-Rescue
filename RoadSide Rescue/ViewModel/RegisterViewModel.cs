@@ -6,7 +6,7 @@ namespace RoadSide_Rescue.ViewModel
 {
     internal class RegisterViewModel : INotifyPropertyChanged
     {
-        public string webApiKey = "AIzaSyB5xd5GeOGrG0mIYgJtDmCzwhVQo_M1WUs";
+        public string webApiKey = "";
 
         private INavigation _navigation;
         private string email;
